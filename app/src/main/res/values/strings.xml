@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Rauchfrei</string>
+    <string name="point_symbol">.</string>
+    <string name="euro_symbol">€</string>
+    <string name="milligram">mg</string>
+
+    <!-- String related to onboarding-->
+    <string name="first_slide_text">Nach der Kippe ist vor der Kippe!</string>
+    <string name="first_slide_button">Einrichten</string>
+
+    <string name="second_slide_text">Wie viel Gift nimmst Du mit einer Zigarette zu Dir?
+        \n
+        \n
+        (in mg pro Zigarette)
+    </string>
+    <string name="nikotin">Nikotin</string>
+    <string name="teer">Teer</string>
+    <string name="co">Kohlenstoffmonoxid</string>
+
+    <string name="third_slide_text">Wie viel qualmst Du?</string>
+    <string name="per_day">Zigaretten / Tag</string>
+    <string name="per_package">Zigaretten / Packung</string>
+    <string name="third_slide_text_two">Was kostet Dich Deine Sucht / Packung?</string>
+    <string name="price_per_package">Preis pro Packung</string>
+
+    <string name="fourth_slide_text">Seit wann hast Du Dich entschieden, Dein Leben in vollen Zügen zu genießen?</string>
+    <string name="start_date">Starttag Raucher</string>
+    <string name="fourth_slide_text_two">So viel länger hättest Du leben können:</string>
+    <string name="fourth_slide_lost_hours">%d Stunden</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <string name="title_activity_main">Hauptmenü</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_time">Zeit</string>
+    <string name="title_milestones">Meilensteine</string>
+    <string name="title_settings">Einstellungen</string>
+
+    <string name="cigarette_button">+\n1 Zigarette</string>
+    <string name="cigarette_per_day">Summe gerauchter Zigaretten heute: %d</string>
+
+    <string name="time_lost">So viel weniger Zeit wirst Du mit Deinen Enkeln haben:</string>
+
+    <string name="milestone_header">Was Du Dir hättest leisten können:</string>
+    <string name="milestone_kakao">Kakao</string>
+    <string name="milestone_fahrrad">Fahrrad</string>
+    <string name="milestone_urlaub">Urlaub</string>
+    <string name="milestone_auto">Auto</string>
+
+    <string name="notification_title">Heute schon geraucht?</string>
+    <string name="notification_body">Vergiss nicht, Dein Sterben zu dokumentieren.</string>
+
+</resources>

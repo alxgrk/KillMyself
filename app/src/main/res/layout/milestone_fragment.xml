@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_milestone_header"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/milestone_header"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- KAKAO -->
+
+    <TextView
+        android:id="@+id/tv_milestone_kakao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/milestone_kakao"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar_kakao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/progressBar_kakao" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_kakao"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_circle"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar_fahrrad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_milestone_header" />
+
+    <TextView
+        android:id="@+id/tv_milestone_kakao_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar_kakao"
+        app:layout_constraintStart_toEndOf="@+id/progressBar_kakao"
+        app:layout_constraintTop_toTopOf="@+id/progressBar_kakao" />
+
+    <!-- FAHRRAD -->
+
+    <TextView
+        android:id="@+id/tv_milestone_fahrrad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/milestone_fahrrad"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar_fahrrad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/progressBar_fahrrad" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_fahrrad"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="15dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_circle"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar_urlaub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar_kakao" />
+
+    <TextView
+        android:id="@+id/tv_milestone_fahrrad_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar_fahrrad"
+        app:layout_constraintStart_toEndOf="@+id/progressBar_fahrrad"
+        app:layout_constraintTop_toTopOf="@+id/progressBar_fahrrad" />
+
+    <!-- URLAUB -->
+
+    <TextView
+        android:id="@+id/tv_milestone_urlaub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/milestone_urlaub"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar_urlaub"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/progressBar_urlaub" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_urlaub"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="15dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_circle"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar_auto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar_fahrrad" />
+
+    <TextView
+        android:id="@+id/tv_milestone_urlaub_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar_urlaub"
+        app:layout_constraintStart_toEndOf="@+id/progressBar_urlaub"
+        app:layout_constraintTop_toTopOf="@+id/progressBar_urlaub" />
+
+    <!-- AUTO -->
+
+    <TextView
+        android:id="@+id/tv_milestone_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/milestone_auto"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar_auto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/progressBar_auto" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_auto"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="15dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar_urlaub" />
+
+    <TextView
+        android:id="@+id/tv_milestone_auto_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar_auto"
+        app:layout_constraintStart_toEndOf="@+id/progressBar_auto"
+        app:layout_constraintTop_toTopOf="@+id/progressBar_auto" />
+
+</android.support.constraint.ConstraintLayout>
