@@ -6,10 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.CalendarView
-import android.widget.EditText
-import android.widget.NumberPicker
-import android.widget.TextView
+import android.widget.*
 import java.util.*
 
 
@@ -20,7 +17,7 @@ class FirstSlide : SlideFragment() {
     ): View? {
         val view = inflater!!.inflate(R.layout.first_entry_fragment, container, false)
 
-        val btn = view.findViewById(R.id.btn_first_slide)
+        val btn = view.findViewById<Button>(R.id.btn_first_slide)
         btn.setOnClickListener {
             (container as SwipeableViewPager).moveToNextPage()
         }
